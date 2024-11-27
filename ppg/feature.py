@@ -2,10 +2,10 @@
 
 import numpy as np
 from scipy.signal import argrelmax, argrelmin
-from params import PPG_SAMPLE_RATE
+# from params import PPG_SAMPLE_RATE
 
 
-def extract_ppg45(single_waveform, sample_rate=PPG_SAMPLE_RATE):
+def extract_ppg45(single_waveform, sample_rate=1250):
     def __next_pow2(x):
         return 1<<(x-1).bit_length()
     features = []
